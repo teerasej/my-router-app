@@ -5,14 +5,15 @@ import { Setting } from './pages/Setting'
 
 function App() {
 
+
   return (
     <>
-      <Router>
-      <div>
-        <h1>Menu</h1>
-        <Link to="/">Home</Link>
-        <Link to="/setting">Setting</Link>
-      </div>
+      <Router basename='/vite-react-app-deploy-lab'>
+        <div>
+          <h1>Menu</h1>
+          <Link to="/">Home</Link>
+          <Link to="/setting">Setting</Link>
+        </div>
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/setting" Component={Setting} />
